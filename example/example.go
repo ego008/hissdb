@@ -48,7 +48,7 @@ func main() {
 		}
 	}
 
-	// API::Dist() Map
+	// API::Dict() Map
 	if rs := conn.Cmd("multi_get", "cc", "bb", "aa"); rs.State == "ok" {
 		fmt.Println("multi_get Dict OK")
 		for k, v := range rs.Dict() {
